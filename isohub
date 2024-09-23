@@ -23,6 +23,8 @@ echo -e "========================================"
 echo -e "ISO minimal"
 echo -e " -h | --help "
 echo -e " -u | --update git repo"
+echo -e " -c | --create-pool Specify the storage location ISO"
+echo -e " -t | --test Testing Pool Entry test"
 echo -e " --rockly8  | Rockly Linux 8.10 netinst"
 echo -e " --rockly9  | Rockly Linux 9 netinst"
 echo -e " --alma8    | Alma Linux 8.10 netinst"
@@ -54,6 +56,7 @@ do
 	-h | --help )helpfunc;;
 	-u | --update)update ;;
 	-c | --create-pool)createpoolFync ;;
+	-е | --test)testpoolFync ;;
 	--rockly8)rockly8 ;;
 	--rockly9)rockly9 ;;
 	--alma8)alma8 ;;
