@@ -6,6 +6,7 @@
 #WebSite:https://soraxlab.ru
 #Date:23.09.2024
 #==========================================
+dir=/opt/isohub/
 . /opt/isohub/lib/ubuntu.sh
 . /opt/isohub/lib/debian.sh
 . /opt/isohub/lib/alma.sh
@@ -33,6 +34,12 @@ echo -e "---------------------------------------"
 echo -e "$ isohub --debain12"
 echo -e "---------------------------------------"
 echo -e "======================================="
+}
+update() {
+	cd dir
+	git status origin main
+	git pull origin main
+
 }
 
 
