@@ -1,5 +1,5 @@
 #!/bin/bash
-. lib/evn-lib.sh
+. /opt/isohub/lib/evn-lib.sh
 alma8() {
 	cd $pool
 	sudo wget -O AlmaLinux-8.iso https://repo.almalinux.org/almalinux/8.9/isos/x86_64/AlmaLinux-8.9-x86_64-minimal.iso

@@ -1,5 +1,5 @@
 #!/bin/bash
-. lib/evn-lib.sh
+. /opt/isohub/lib/evn-lib.sh
 ubuntu_server_22() {
 	cd $pool
 	sudo wget -O ubuntu-server22.04lts.iso https://releases.ubuntu.com/22.04.4/ubuntu-22.04.4-live-server-amd64.iso

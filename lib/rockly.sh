@@ -1,5 +1,5 @@
 #!/bin/bash
-. lib/evn-lib.sh
+. /opt/isohub/lib/evn-lib.sh
 rockly8() {
 	cd $pool
 	sudo wget -O RocklyLinux-8.iso https://download.rockylinux.org/pub/rocky/8/isos/x86_64/Rocky-8.9-x86_64-minimal.iso
