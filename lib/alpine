@@ -1,4 +1,11 @@
 #!/bin/bash
+#==========================================
+#Name:isohub
+#Autor:h0lik@linux
+#GitHub:github.com/h0lik
+#WebSite:https://soraxlab.ru
+#Date:23.09.2024
+#==========================================
 source /opt/isohub/lib/evn-lib
 alpine() {
 	cd $pool
