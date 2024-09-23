@@ -7,13 +7,14 @@
 #Date:23.09.2024
 #==========================================
 dir=/opt/isohub/
-. /opt/isohub/lib/ubuntu.sh
-. /opt/isohub/lib/debian.sh
-. /opt/isohub/lib/alma.sh
-. /opt/isohub/lib/rockly.sh
-. /opt/isohub/lib/fedora-server.sh
-. /opt/isohub/lib/alpine.sh
-. /opt/isohub/lib/centos.sh
+lib=/opt/isohub/lib
+source $lib/ubuntu
+source $lib/debian
+source $lib/alma
+source $lib/rockly
+source $lib/fedora-server
+source $lib/alpine
+source $lib/centos
 helpfunc() {
 echo -e "========================================"
 echo -e "Script download ISO"

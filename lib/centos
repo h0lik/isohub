@@ -1,5 +1,5 @@
 #!/bin/bash
-. /opt/isohub/lib/evn-lib.sh
+source /opt/isohub/lib/evn-lib
 centos9() {
 	cd $pool
 	sudo wget https://mirror.yandex.ru/centos-stream/9-stream/BaseOS/x86_64/iso/CentOS-Stream-9-latest-x86_64-boot.iso

@@ -1,5 +1,5 @@
 #!/bin/bash
-. /opt/isohub/lib/evn-lib.sh
+source /opt/isohub/lib/evn-lib
 alpine() {
 	cd $pool
 	sudo wget -O alpine-vs.iso https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/x86_64/alpine-virt-3.19.1-x86_64.iso

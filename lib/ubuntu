@@ -1,5 +1,5 @@
 #!/bin/bash
-. /opt/isohub/lib/evn-lib.sh
+source /opt/isohub/lib/evn-lib
 ubuntu_server_20() {
 	cd $pool
 	sudo wget -O ubuntu-server-20.04.iso https://releases.ubuntu.com/20.04.6/ubuntu-20.04.6-live-server-amd64.iso

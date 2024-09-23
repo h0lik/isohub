@@ -1,5 +1,5 @@
 #!/bin/bash 
-. /opt/isohub/lib/evn-lib.sh
+source /opt/isohub/lib/evn-lib
 
 debian12() {
 	cd $pool
