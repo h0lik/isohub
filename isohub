@@ -53,7 +53,7 @@ do
 	case "$1" in 
 	-h | --help )helpfunc;;
 	-u | --update)update ;;
-	-c | --create-pool) ;;
+	-c | --create-pool)createpoolFync ;;
 	--rockly8)rockly8 ;;
 	--rockly9)rockly9 ;;
 	--alma8)alma8 ;;
