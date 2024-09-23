@@ -35,7 +35,7 @@ echo -e "$ isohub --debain12"
 echo -e "---------------------------------------"
 echo -e "======================================="
 }
-udpatestat() {
+updatestat() {
 	cd $dir
 	git status origin main
 }
