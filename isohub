@@ -11,6 +11,9 @@ dir=/opt/isohub/
 . /opt/isohub/lib/debian.sh
 . /opt/isohub/lib/alma.sh
 . /opt/isohub/lib/rockly.sh
+. /opt/isohub/lib/fedora-server.sh
+. /opt/isohub/lib/alpine.sh
+. /opt/isohub/lib/centos.sh
 helpfunc() {
 echo -e "========================================"
 echo -e "Script download ISO"
@@ -18,7 +21,6 @@ echo -e "========================================"
 echo -e "ISO minimal"
 echo -e " -h | --help "
 echo -e " -u | --update git repo"
-echo -e " -s | --status git check update"
 echo -e " --rockly8  | Rockly Linux 8.10 netinst"
 echo -e " --rockly9  | Rockly Linux 9 netinst"
 echo -e " --alma8    | Alma Linux 8.10 netinst"
@@ -37,10 +39,6 @@ echo -e "$ isohub --debain12"
 echo -e "---------------------------------------"
 echo -e "======================================="
 }
-updatestat() {
-	cd $dir
-	git status origin main
-}
 update() {
 	cd $dir
 	git pull origin main
@@ -53,7 +51,6 @@ do
 	case "$1" in 
 	-h | --help )helpfunc;;
 	-u | --update)update ;;
-	-s | --status)updatestat ;;
 	--rockly8)rockly8 ;;
 	--rockly9)rockly9 ;;
 	--alma8)alma8 ;;
@@ -61,12 +58,12 @@ do
 	--debian11)debian11 ;;
 	--debian12)debian12 ;;
 	--ubuntu-serv20.04)ubuntu_server_20 ;;
-	--ubuntu-serv22.04) ;;
-	--ubuntu-serv23.04) ;;
-	--ubunut-serv24.04) ;;
-	--fedora-server39) ;;
-	--centos9) ;;
-	--alpine) ;;
+	--ubuntu-serv22.04)ubuntu_server_22 ;;
+	--ubuntu-serv23.04)ubuntu_server_23 ;;
+	--ubunut-serv24.04)ubuntu_server_24 ;;
+	--fedora-server39)fedora39srv ;;
+	--centos9)centos9 ;;
+	--alpine)alpine;;
 esac 
 shift 
 done 

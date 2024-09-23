@@ -1,0 +1,8 @@
+#!/bin/bash
+. /opt/isohub/lib/evn-lib.sh
+alpine() {
+	cd $pool
+	sudo wget -O alpine-vs.iso https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/x86_64/alpine-virt-3.19.1-x86_64.iso
+	echo -e "Downloaded Alpine Linux 3.19 \e[32m successfully! \e[0m"
+	echo -e "SHA-256 -> \e[32m 366317d854d77fc5db3b2fd774f5e1e5db0a7ac210614fd39ddb555b09dbb344 \e[0m "
+}
