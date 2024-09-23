@@ -1,6 +1,7 @@
 #!/bin/bash
 createpoolFync() {
+sudo -s
 echo -e "Hello \e[32m $USER \e[0m ,Creating a pool storage ISO?"
 read -p "-Create pool storage?:" poollib
-sudo bash echo "pool=$poollib" >> /opt/isohub/lib/evn-lib
+echo "pool=$poollib" >> /opt/isohub/lib/evn-lib
 }
