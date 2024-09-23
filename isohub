@@ -15,6 +15,7 @@ source $lib/rockly
 source $lib/fedora-server
 source $lib/alpine
 source $lib/centos
+source $lib/createpool
 helpfunc() {
 echo -e "========================================"
 echo -e "Script download ISO"
@@ -52,6 +53,7 @@ do
 	case "$1" in 
 	-h | --help )helpfunc;;
 	-u | --update)update ;;
+	-c | --create-pool) ;;
 	--rockly8)rockly8 ;;
 	--rockly9)rockly9 ;;
 	--alma8)alma8 ;;
