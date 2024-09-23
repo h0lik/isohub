@@ -9,6 +9,5 @@ testpoolFync() {
     cd $pool 
     touch test-pool.txt
     echo "test pool" >> test-pool.txt
-    $PWD
     cat test-pool.txt
 }

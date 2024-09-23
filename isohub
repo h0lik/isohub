@@ -56,7 +56,7 @@ do
 	-h | --help )helpfunc;;
 	-u | --update)update ;;
 	-c | --create-pool)createpoolFync ;;
-	-е | --test)testpoolFync ;;
+	-t | --test)testpoolFync ;;
 	--rockly8)rockly8 ;;
 	--rockly9)rockly9 ;;
 	--alma8)alma8 ;;
